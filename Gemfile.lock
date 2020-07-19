@@ -52,7 +52,8 @@ GEM
       yell (~> 2.0)
     i18n (0.9.5)
       concurrent-ruby (~> 1.0)
-    kramdown (2.1.0)
+    kramdown (2.3.0)
+      rexml
     kramdown-parser-gfm (1.1.0)
       kramdown (~> 2.0)
     liquid (4.0.0)
@@ -91,6 +92,7 @@ GEM
     public_suffix (3.0.3)
     rake (12.3.1)
     ref (2.0.0)
+    rexml (3.2.4)
     rouge (3.2.1)
     slow_enumerator_tools (1.1.0)
     thread_safe (0.3.6)
@@ -114,8 +116,8 @@ DEPENDENCIES
   html-pipeline-asciidoc_filter (~> 1.5)
   html-pipeline-rouge_filter (~> 1.0)
   html-proofer (~> 3.7)
-  kramdown
-  kramdown-parser-gfm
+  kramdown (>= 2.3.0)
+  kramdown-parser-gfm (>= 1.1.0)
   nanoc (~> 4.7)
   nanoc-conref-fs (~> 0.7)
   nanoc-html-pipeline (~> 0.3)
@@ -128,4 +130,4 @@ RUBY VERSION
    ruby 2.4.2p198
 
 BUNDLED WITH
-   1.16.3
+   1.17.3
